@@ -1,34 +1,73 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Lion Lend - Empower Your Dreams
 
-## Getting Started
+### Pages
 
-First, run the development server:
+- [ ] Home
+- [ ] Loan Request Page
+- [ ] Credit Verification Page (Score Result)
+- [ ] Payments Page
+- [ ] Support Page
+- [ ] Lion Academy Page (Free Courses, webinars, etc)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+### Components
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- [ ] Notification Bar
+- [ ] Header
+- [ ] Footer
+- [ ] Registration Form
+- [ ] Login Form
+- [ ] Loan Request Form
+- [ ] Credit Verification
+- [ ] Payment List
+- [ ] Customer Support
+- [ ] ChatBot (maybe)
+- [ ] Share Button
+- [ ] Friend Referral (Gamification Exemple:  Earn $10 for each referred friend)
+- [ ] Personal Bank List
+- [ ] Personal Bank Modal Details
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Features
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+- [ ] Responsive Design
+- [ ] Dark Mode
+- [ ] PWA
+- [ ] Push Notifications
+- [ ] Offline Mode
+- [ ] Multi Language
+- [ ] Multi Currency
+- [ ] Multi Country
+- [ ] Multi Platform (Web, Android, iOS)
+- [ ] Multi Browser
+- [ ] Multi Database
 
-## Learn More
+### Front End Technology Stack
 
-To learn more about Next.js, take a look at the following resources:
+- [ ] HTML5
+- [ ] SASS
+- [ ] Typescript
+- [ ] React
+- [ ] React Testing Library
+- [ ] Jest
+- [ ] Material UI
+- [ ] Bootstrap
+- [ ] Figma
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Back End Technology Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- [ ] Supabase
+- [ ] Node.js
+- [ ] Express.js
+- [ ] MongoDB
+- [ ] Mongoose
+- [ ] Firebase
 
-## Deploy on Vercel
+### Tools and Services Used:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Git
+- [ ] GitHub
+- [ ] SourceTree
+- [ ] Visual Studio Code
+- [ ] Chrome DevTools
+- [ ] Postman
+- [ ] Vercel
+- [ ] Google Cloud

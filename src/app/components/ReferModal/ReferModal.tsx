@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, ChangeEvent, FormEvent } from 'react';
 import { Button, Modal, Typography, TextField, Snackbar, FormHelperText } from '@mui/material';
 import './style.scss'
 
@@ -11,7 +11,6 @@ const ReferModal = () => {
     const [affiliateLink, setAffiliateLink] = useState('');
     const [copyNotificationOpen, setCopyNotificationOpen] = useState(false);
 
-
     const handleOpen = () => {
         setOpen(true);
     };
@@ -20,7 +19,7 @@ const ReferModal = () => {
         setOpen(false);
     };
 
-    const handleInputChange = (e) => {
+    const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
         const { name, value } = e.target;
         if (name === 'name') {
             setName(value);
@@ -29,7 +28,7 @@ const ReferModal = () => {
         }
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         // Perform submission logic or API call here
 
@@ -61,8 +60,7 @@ const ReferModal = () => {
 
     return (
         <>
-
-            <Button className="button-primary" color="warning" variant="contained" onClick={handleOpen} size="medium" >Refer a friend</Button>
+            <Button className="button-primary" color="warning" variant="contained" onClick={handleOpen} size="medium">Refer a friend</Button>
 
             <Modal open={open} onClose={handleClose}>
                 <div className="modal-container">
@@ -81,7 +79,7 @@ const ReferModal = () => {
                         />
                         <TextField
                             label="Email"
-                            type='mail'
+                            type='email'
                             name="email"
                             value={email}
                             onChange={handleInputChange}
@@ -89,7 +87,7 @@ const ReferModal = () => {
                             fullWidth
                             margin="normal"
                         />
-                        <FormHelperText id="my-helper-text">We'll never share your email.</FormHelperText>
+                        <FormHelperText id="my-helper-text">We will never share your email.</FormHelperText>
                         <div className='modal-buttons'>
                             <Button type="button" variant="outlined" color="primary" onClick={handleCopyLink}>
                                 Copy Link

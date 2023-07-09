@@ -1,0 +1,52 @@
+@import "./variables.scss";
+
+/*Reset CSS*/
+* {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #f0f0f0;
+}
+
+.button-primary {
+    border-radius: 25px;
+    text-transform: none;
+    font-size: 16px; 
+}
+
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0px auto;
+}
+
+// h1 {
+//     color: $c-orange;
+//     font-size: 36px;
+// }
+
+// h2 {
+//     color: $c-orange;
+//     font-size: 24px;
+// }
+
+// h3 {
+//     color: $c-orange;
+//     font-size: 20px;
+// }
+
+// p {
+//     color: $c-brown;
+//     font-size: 16px;
+// }  

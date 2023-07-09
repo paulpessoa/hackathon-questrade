@@ -1,0 +1,195 @@
+@import "../../globals.scss";
+
+.logo-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .logo-image {
+        height: 120px;
+        width: 120px;
+    }
+
+    .logo-texts {
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .text-brand {
+            font-size: 36px;
+            font-weight: bold;
+            color: $c-orange;
+        }
+
+        .text-slogan {
+            font-size: 0.9rem;
+            color: $c-orange;
+            text-align: center;
+        }
+    }
+}
+
+header {
+    .container {
+        width: 90%;
+    }
+
+    width: 100%;
+    background-color: #fff;
+
+    img {
+        width: 160px;
+        margin-right: 0;
+        padding: 15px 0;
+        margin: 0px;
+    }
+
+    nav {
+        display: flex;
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            li {
+                list-style: none;
+
+                .nav-link {
+                    text-decoration: none;
+                    font-weight: 500;
+                    color: $c-orange;
+                    font-size: 16px;
+                    padding: 1rem;
+                    transition: all 250ms linear 0s;
+
+                    &:hover {
+                        color: $c-brown;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@keyframes menu {
+    0% {
+        left: 0px;
+        top: -100px;
+    }
+
+    100% {
+        left: 0px;
+        top: 0px;
+    }
+}
+
+@media (max-width: 630px) {
+    .hero .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .form-group {
+        display: block;
+    }
+}
+
+@media (max-width: 1020px) {
+    .menu-section nav {
+        display: none;
+    }
+
+    .one,
+    .two,
+    .three {
+        background-color: $c-orange;
+        height: 5px;
+        max-width: 1020px;
+        width: 90%;
+        margin: 6px auto;
+        transition-duration: 0.3s;
+    }
+
+    .menu-toggle {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+    }
+
+    /*Fullscreen*/
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: $c-orange;
+        z-index: 10;
+        /*camada acima, evitar o scrool dos itens a baixo*/
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-section.on nav {
+        display: block;
+    }
+
+    .menu-section.on .menu-toggle {
+        position: absolute;
+        right: 30px;
+        top: 30px;
+    }
+
+    .menu-section.on .menu-toggle .one {
+        transform: rotate(45deg) translate(7px, 7px);
+        background-color: #fff;
+    }
+
+    .menu-section.on .menu-toggle .two {
+        opacity: 0;
+    }
+
+    .menu-section.on .menu-toggle .three {
+        transform: rotate(-45deg) translate(8px, -9px);
+        background-color: #fff;
+    }
+
+    .menu-section.on nav ul {
+        text-align: center;
+        display: block;
+    }
+
+    .menu-section.on nav ul a {
+        transition-duration: 0.5s;
+        font-size: 1rem;
+        display: block;
+        color: #fff;
+        padding: 1rem;
+    }
+
+
+    header nav ul li a .FiLogOut {
+        width: 40px;
+    }
+
+    .menu-section.on nav ul .hide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0rem;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 320px) {
+    #form h3 {
+        font-size: 1rem;
+    }
+}

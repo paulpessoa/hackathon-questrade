@@ -1,14 +1,16 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-$lion-primary-font: 'Lato', Helvetica, sans-serif;
+$lion-primary-font: 'Montserrat', sans-serif;
+// $lion-primary-font: 'Lato', Helvetica, sans-serif;
 $lion-secondary-font: 'Roboto', Helvetica, sans-serif;
  
 // Color palette for Light Mode:
 $c-light: #FFFFFF; // White
-$c-orange: #FFA500; // Vibrant Orange
-$c-golden: #FFD700; // Golden
+$c-orange: #F58220; // Vibrant Orange
+$c-golden: #FEd303; // Golden
 $c-brown: #8B4513; // Rich Brown
 $c-neutral: #808080; // Neutral Gray
 

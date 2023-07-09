@@ -1,22 +1,28 @@
 @import '../sass/variables.scss';
 
-.main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+.text-highlight {
+    background-color: $c-golden;
+    color: black;
 }
 
-.description {
-  display: inherit;
-  color: $c-golden;
-  justify-content: inherit;
-  align-items: inherit;
-  font-size: 0.85rem;
-  max-width: var(--max-width);
-  width: 100%;
-  z-index: 2;
-  font-family: var(--font-mono);
+.refer-banner {
+        background-color: $c-golden;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 40px;
+        .refer-text {
+            text-align: center;
+            h1 {
+                margin-bottom: 20px;
+            }
+        }
+}
+
+@media (max-width: 630px) {
+    .refer-banner {
+        flex-direction: column;
+        text-align: center;
+    }
 }

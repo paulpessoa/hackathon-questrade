@@ -31,45 +31,41 @@ const Header = () => {
                     </div>
                     <nav>
                         <ul>
-                            <li>
-                                <Link className="nav-link" href="/about">About</Link>
-                            </li>
-
-
                             {/* <li>
-                                <Link href="/loans">
-                                    Loans*
+                                <Link className="nav-link" href="/about">About</Link>
+                            </li> */}
+
+
+                            <li>
+                                <Link className="nav-link" href="/loans">
+                                    Loans
                                 </Link>
                             </li>
+                            <li>
+                                <Link className="nav-link" href="/score">
+                                    Score Calculator
+                                </Link>
+                            </li>
+                            {/* 
                             <li>
                                 <Link href="/payments">
                                     Payments*
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/score">
-                                    Score*
-                                </Link>
-                            </li>
-                            <li>
                                 <Link href="/academy">
                                     Academy
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="/refer">
-                                    Refer
                                 </Link>
                             </li> */}
 
 
                             <li>
-                                <Link className="nav-link" href="/help">
+                                <Link className="nav-link" href="#">
                                     Help ?
                                 </Link>
                             </li>
                             <li>
-                                <Button className="button-primary" color="warning" variant="contained" href="/auth" size="medium" >Apply now</Button>
+                                <Button className="button-primary" color="warning" variant="contained" href="/score" size="medium" >Apply now</Button>
                             </li>
                             {/* <li>
                                 <Link href="/auth">

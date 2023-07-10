@@ -7,8 +7,8 @@
     align-items: center;
 
     .logo-image {
-        height: 120px;
-        width: 120px;
+        height: 80px;
+        width: 100%;
     }
 
     .logo-texts {
@@ -19,13 +19,13 @@
         align-items: center;
 
         .text-brand {
-            font-size: 36px;
+            font-size: 32px;
             font-weight: bold;
             color: $c-orange;
         }
 
         .text-slogan {
-            font-size: 0.9rem;
+            font-size: 0.8rem;
             color: $c-orange;
             text-align: center;
         }
@@ -166,7 +166,7 @@ header {
         display: block;
     }
 
-    .menu-section.on nav ul a {
+    .menu-section.on nav ul .nav-link {
         transition-duration: 0.5s;
         font-size: 1rem;
         display: block;

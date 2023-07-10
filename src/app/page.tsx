@@ -11,47 +11,42 @@ function Home() {
   return (
     <div className="Home">
 
-      <section className="bannerHome">
-        <section className="bannerHomeGlass">
-          <div className="container">
-            <div className="divl">
-              <h1> Loans from $5,000 to $50,000 from the confort of your home</h1>
-              <p>Permanently employed and paid trough a bank? LionLend is the fastest and most convenient way to acces cash, and the applications is 100% online. You could be <span className="text-highlight">approved in minutes</span></p>
-              <Button className="button-primary" color="warning" variant="contained" href="/auth" size="medium" >Apply now</Button>
-            </div>
-            <div className="divr">
-              <Image width={500} height={500} src="/images/woman-chart.png" alt="Banner 1" />
-            </div>
+      <section className="banner-home">
+        <div className="banner-container">
+          <div className="banner-text">
+            <h1> Loans from $5,000 to $50,000 from the confort of your home</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet hendrerit urna eu rutrum.</p>
+            <Button color="warning" variant="contained" href="/score" size="medium" >Apply now</Button>
           </div>
-        </section>
-      </section>
-
-      <section className="sectionWay">
-        <h2>Approval in minutes, Money the next day</h2>
-        <p>What would you like to do?</p>
-        <div className="cardsContainer container">
-          <div className="cardWay">
-            {/* <Image width={200} height={200} src="/images/icons/recruitment.png" alt="Search" /> */}
-            <h3>Apply online</h3>
-            <p>blablablabla</p>
-          </div>
-
-          <div className="cardWay">
-            {/* <Image width={200} height={200} src="/images/icons/search.png" alt="Profile" /> */}
-            <h3>Verify your info</h3>
-            <p>blablablabla</p>
-          </div>
-
-          <div className="cardWay">
-            {/* <Image width={200} height={200} src="/images/icons/schedule.png" alt="Schedule" /> */}
-            <h3>Get your loan</h3>
-            <p>blablabl ala lnala lanlanlanla lanalnal</p>
+          <div className="banner-image">
+            <Image width={500} height={500} src="/images/woman-chart.png" alt="Banner 1" />
           </div>
         </div>
-
       </section>
 
+      <section className="loan-steps">
+        <h2>Approval in minutes, Money the next day</h2>
+        <p>What would you like to do?</p>
+        <div className="container cards">
+          <div className="cardWay">
+            <Image width={100} height={100} src="/images/entrevista-online.gif" alt="Apply online" />
+            <h3>Apply online</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet hendrerit urna eu rutrum.</p>
+          </div>
 
+          <div className="cardWay">
+            <Image width={100} height={100} src="/images/eficiencia.gif" alt="Verify your Score" />
+            <h3>Verify your Score</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet hendrerit urna eu rutrum.</p>
+          </div>
+
+          <div className="cardWay">
+            <Image width={100} height={100} src="/images/casa.gif" alt="Get your loan" />
+            <h3>Get your loan</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet hendrerit urna eu rutrum.</p>
+          </div>
+        </div>
+      </section>
 
       <section className="refer-banner">
 

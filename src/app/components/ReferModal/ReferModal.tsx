@@ -1,5 +1,5 @@
 import { useState, ChangeEvent, FormEvent } from 'react';
-import { Button, Modal, Typography, TextField, Snackbar, FormHelperText } from '@mui/material';
+import { Button, Modal, Typography, TextField, Snackbar } from '@mui/material';
 import './style.scss'
 
 const ReferModal = () => {
@@ -69,16 +69,18 @@ const ReferModal = () => {
                     </Typography>
                     <form onSubmit={handleSubmit}>
                         <TextField
-                            label="Name"
+                            label="Friend's name"
+                            size='small'
                             name="name"
                             value={name}
                             onChange={handleInputChange}
                             required
                             fullWidth
                             margin="normal"
-                        />
+                            />
                         <TextField
-                            label="Email"
+                            size='small'
+                            label="Friend's email"
                             type='email'
                             name="email"
                             value={email}
@@ -87,13 +89,12 @@ const ReferModal = () => {
                             fullWidth
                             margin="normal"
                         />
-                        <FormHelperText id="my-helper-text">We will never share your email.</FormHelperText>
                         <div className='modal-buttons'>
-                            <Button type="button" variant="outlined" color="primary" onClick={handleCopyLink}>
+                            <Button type="button" color='warning'  variant="outlined" onClick={handleCopyLink}>
                                 Copy Link
                             </Button>
 
-                            <Button type="submit" variant="contained" color="primary">
+                            <Button type="submit" color='warning' variant="contained">
                                 Send invite
                             </Button>
                         </div>

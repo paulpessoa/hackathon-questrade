@@ -3,6 +3,8 @@ import './globals.scss'
 import Header from './layout/header'
 import Footer from './layout/footer'
 
+import ChatButton from './components/ChatButton/ChatButton'
+
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 
@@ -23,6 +25,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <Header />
         {children}
+        <ChatButton/>
         <Footer />
       </body>
     </html>
